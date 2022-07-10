@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="@cyourell">
+
+<title>bookmarks</title>
+<style>
+html, body, tr, td {
+    font-family: monospace;
+	font-size: 110%;
+    background-color: #232333;
+    color: #BFAE9F;	
+	max-width:50rem;
+	padding: 0.5rem;
+	margin:auto
+}
+hr {
+	height: 1px;
+	border: none;
+	background: #615850
+}
+h1, h2, h3 {
+    margin-top: 0;
+	margin-bottom: 0;
+}
+
+
+/*lists*/
+ul, dl {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+li, dt {
+  padding-left: 1em;
+  text-indent: -1em;
+  padding-bottom: 10px;
+}
+dd{
+	color: rgb(104, 217, 169, 0.7);
+	margin-left: 3rem;
+}
+li:before, dt:before {
+	color: #E688F2;
+	content: ">>";
+	padding-right: 5px;
+	padding-left: 5px;
+}
+
+
+/*links*/
+
+a,a:visited,a:active {
+	text-decoration: none;
+	color: #8091F2;
+}
+a:hover {
+	text-decoration: underline;
+	color: #E69C5F;
+}
+/*
+a:before {content: "["; color: #bd93f9;}
+a:after {content: "]"; color: #bd93f9;}
+*/
+
+a.sub,a.sub:visited,a.sub:active {
+	margin-left: 2rem;
+	text-decoration: none;
+	color: #84C9F9;
+}
+a.sub:hover { 
+	text-decoration: underline;
+	color: #E69C5F;
+}
+a.sub:before {content: '\2192 \0020';}
+
+
+
+article {
+padding: 0.5rem;
+background: #1E1E24;
+border: 1px solid rgba(144, 149, 247, .5);
+}
+
+.note {
+	color: #BFAE9F;
+	margin-left: 3rem;
+	display: flex;
+}
+
+.tag {
+	font-size: 80%;
+	color: #F6C281;
+	background-color: #2A293D;
+	border: 1px solid rgba(144, 149, 247, .5);
+	border-radius: 5px;
+	margin: 0.5rem;
+	padding: 1px;
+	text-align: right;
+}
+
+.tab {
+padding-left: 2rem;
+}
+
+</style>
+
+<h1>bookmarks & tools</h1>
+<br><br>
+
+<article>
+	<h2>data visualization</h2>
+	<ul>
+
+		<li><a href="https://exhibits.stanford.edu/dataviz">Data Visualization and the Modern Imagination</a>
+			<br><span class="note">virtual exhibit of historical data vis</span></li>
+		<li><a href="https://www.datavisualizationsociety.com/">Data Visualization Society</a>
+			<br><a class="sub" href="https://www.datavisualizationsociety.org/fireside-chats">fireside chats</a></li>
+		<li><a href="https://mschermann.github.io/data_viz_reader/">A Reader on Data Visualization</a>
+			<br><span class="note">a collaborative writing project as part of the data visualization course at Santa Clara University</span></li>
+		<li><a href="https://extremepresentation.typepad.com/files/chart-chooser-2020.pdf">chart selection flowchart</a>
+		<li><a href="https://r-charts.com/distribution/box-plot-jitter-ggplot2/">jittered box plots</a></li>
+		<li><a href="https://github.com/RainCloudPlots/RainCloudPlots">raincloud plots</a></li>
+	</ul>
+	<hr>
+	<h3>colors & palettes</h3>
+	<ul>
+		<li><a href="https://projects.susielu.com/viz-palette">Viz Palette</a>
+			<br><span class="note">palette picker with colorblind simulation</span></li>
+		<li><a href="https://colorbrewer2.org">Color Brewer 2.0</a>
+			<br><span class="note">choropleth palette testing</span></li>
+		<li><a href="https://blog.datawrapper.de/colors-for-data-vis-style-guides/">guide to colors in data vis style guides</a></li>
+		<li><a href="https://snook.ca/technical/colour_contrast/colour.html">Colour Contrast Checker</a>
+			<br><span class="note">includes compliance checks</span></li>
+		<li><a href="https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html">viridis color mapping</a></li>
+	</ul>
+</article>
+
+<br>
+<article>
+<h3>GIS</h3>
+<ul>
+	<li><a href="https://gist.github.com/jakebathman/719e8416191ba14bb6e700fc2d5fccc5">state/territory measurements</a>
+		<br><span class="note">lat/long measurements for all states/territories</span></li>
+	<li><a href="https://www.openstreetmap.org/">OpenStreetMap</a></li>
+	<li><a href="http://maps.stamen.com/">Stamen Maps</a>
+		<br><span class="note">OpenStreetMap tiles</span></li>
+	<li><a href="https://www.huduser.gov/portal/pdrdatas_landing.html">HUD User datasets</a>
+		<br><a class="sub" href="https://www.huduser.gov/portal/datasets/usps_crosswalk.html">zip code crosswalk files</a>
+		<br><span class="note">crosswalk files can be used to combine zip codes and other geographies</span></li>
+	<li><a href="https://felt.com/">Felt</a></li>
+</ul>
+</article>
+
+<br>
+<article>
+<h3>HTML/CSS</h3>
+<ul>
+	<li><a href="https://omatsuri.app/">Omatsuri</a>
+		<br><span class="note">Open source browser tools</span></li>
+	<li><a href="http://paletton.com">Paletton palette creator</a>
+		<br><span class="note">palette creator with export tool</span></li>
+	<li><a href="https://snook.ca/technical/colour_contrast/colour.html">Colour Contrast Checker</a></li>
+</ul>
+</article>
+
+<br>
+<article>
+<h3>general tools</h3>
+<ul>
+	<li><a href="https://untools.co/">Untools: Tools for better thinking</a>
+		<br><span class="note">decision making, solving problems, and understanding systems</span></li>
+	<li><a href="http://metricsparrow.com/toolkit/email-permutator/">Email Permutor+</a></li>
+	<li><a href="https://www.postman.com/">postman</a>
+		<br><span class="note">tools for building/testing APIs</span></li>
+	<li><a href="https://mxtoolbox.com/">mxtoolbox</a></li>
+	<li><a href="https://gitlab.com/gitlab-data/analytics/tree/master/extract/sheetload">SheetLoad by GitLab Data Team</a></li>
+</ul>
+</article>
+
+<br>
+<article>
+<h3>note taking & knowledge bases</h3>
+<ul>
+	<li><a href="https://obsidian.md/">obsidian.md</a></li>
+	<li><a href="https://logseq.com/">loqseq</a></li>
+	<li><a href="https://roamresearch.com/">roam research</a></li>
+	<li><a href="https://mymind.com/">mymind</a></li>
+</ul>
+</article>
+
+<br>
+<article>
+<h2>learning resources</h2>
+<ul>
+	<li><a href="https://www.cs.usfca.edu/~galles/visualization/Algorithms.html">Data Structure Visualizations</a>
+		<br><a class="sub" href="https://www.cs.usfca.edu/~galles/visualization/BTree.html">B-Tree Visualizer</a></li>
+	<li><a href="https://adventofcode.com/">Advent of Code</a></li>
+</ul>
+	<hr>
+	<h3>python</h3>
+<ul>
+	<li><a href="https://wesmckinney.com/book/">Python for Data Analysis 3E</a>
+		<br><span class="note">available as open access</span></li>
+	<li><a href="https://docs.python-guide.org">The Hitchhiker's Guide to Python</a>
+		<br><a class="sub" href="https://docs.python-guide.org/writing/structure/">Structuring Your Project</a></li>
+</ul>
+	<hr>
+	<h3>SQL</h3>
+<ul>
+	<li><a href="https://pgexercises.com/">PostgreSQL Exercises</a></li>
+	<li><a href="https://sqlbolt.com/">SQLBolt lessons</a></li>
+	<li><a href="https://mode.com/sql-tutorial/">MODE SQL Lessons</a></li>
+	<li><a href="https://sqlzoo.net/wiki/SQL_Tutorial">sqlzoo wiki lessons</a></li>
+	<li><a href="https://app.rasgoml.com/sql">Rasgo SQL generator</a></li>
+</ul>
+</article>
+
+<br>
+<article>
+<h3>other references</h3>
+<ul>
+	<li><a href="https://en.wikipedia.org/wiki/Box-drawing_character">box-drawing characters</a></li>
+	<li><a href="https://cloud.google.com/architecture/reference-patterns/overview">GCP design patterns</a>
+		<br><span class="note">data analytics design patterns with Google Cloud</span></li>
+</ul>
+</article>
